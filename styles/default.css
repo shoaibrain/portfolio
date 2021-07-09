@@ -207,39 +207,8 @@ h6 {
   width: 390px;
   object-fit: cover;
 }
-.arrow,
-.arrow:before {
-  position: absolute;
-  left: 50%;
-}
 
-.arrow {
-  width: 40px;
-  border-color: rgba(0, 0, 0, 0.75);
-  height: 40px;
-  top: 87%;
-  margin: -20px 0 0 -20px;
-  -webkit-transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: 2px solid red;
-  border-bottom: 2px solid red;
-}
 
-.arrow:before {
-  content: '';
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px #fff solid;
-  border-bottom: 1px #fff solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
-}
 
 @keyframes arrow {
   0% {
@@ -536,15 +505,41 @@ h6 {
   .right-column {
     justify-content: center;
   }
+.arrow,
+.arrow:before {
+  position: absolute;
+  /* position: unset; */
+  left: 50%;
+}
+
   .arrow {
-    top: 110%;
-    border-right: 2px solid rgba(54, 47, 47, 0.521);
+    
+   width: 40px;
+  border-color: rgba(0, 0, 0, 0.75);
+  height: 40px;
+  top: 110%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+   border-right: 2px solid rgba(54, 47, 47, 0.521);
     border-bottom: 2px solid rgba(54, 47, 47, 0.521);
   }
 
   .arrow:before {
+      content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
     border-right: 2px solid rgba(54, 47, 47, 0.521);
     border-bottom: 2px solid rgba(54, 47, 47, 0.521);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+
 }
 
 @media screen and (max-width: 400px) {
